@@ -1,0 +1,1108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   background-color:#E0F8F2 ; 
+    color: #163c32;
+}
+
+header {
+    width: 100%;
+    min-height: 85px;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #e9eee8;
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 27px;
+    font-weight: 800;
+    color: #163c32;
+    white-space: nowrap;
+}
+
+.logo i {
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #183d32;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0f03b7;
+}
+
+nav a i {
+    margin-left: 7px;
+    font-size: 12px;
+}
+
+.buttonlar {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    white-space: nowrap;
+}
+
+.buttonlar a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.login {
+    color: #183d32;
+}
+
+.account {
+    background-color: #6f3522;
+    color: #ffffff;
+    padding: 15px 22px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.account:hover,
+.cta:hover {
+    background-color: #5804ce;
+    transform: translateY(-2px);
+}
+
+main {
+    min-height: calc(100vh - 85px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 65px 8%;
+    overflow: hidden;
+}
+
+.Orta {
+    flex: 1;
+    max-width: 570px;
+}
+
+.Orta h1 {
+    font-size: clamp(38px, 4.2vw, 60px);
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: #173e32;
+    margin-bottom: 25px;
+}
+
+.script {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.Orta p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #41594f;
+    margin-bottom: 30px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f47b52;
+    color: #ffffff;
+    padding: 17px 24px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.natijalar {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.yulduzlar {
+    color: #e9a33b;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.natijalar span {
+    color: #41594f;
+    font-size: 12px;
+}
+
+.rasm {
+    flex: 1;
+    position: relative;
+    min-height: 430px;
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mahsulotlar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mahsulotlar img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.winback {
+    position: absolute;
+    left: -15px;
+    top: 45px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    background-color: #ffffff;
+    padding: 17px 22px;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(28, 59, 46, 0.14);
+    transform: rotate(-5deg);
+    margin-top: 170px;
+}
+
+.avatar-rasm {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f7d8c8;
+    flex-shrink: 0;
+
+    
+}
+
+.avatar-rasm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.winback-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #183d32;
+    font-size: 17px;
+}
+
+@media (max-width: 1050px) {
+    header {
+        padding: 18px 4%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .buttonlar {
+        gap: 14px;
+    }
+
+    main {
+        padding: 55px 5%;
+        gap: 20px;
+    }
+
+    .Orta h1 {
+        font-size: 45px;
+    }
+
+    .winback {
+        left: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding: 10px 0 4px;
+        gap: 22px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .buttonlar {
+        gap: 12px;
+    }
+
+    .account {
+        padding: 12px 14px;
+        font-size: 12px !important;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 45px 6% 60px;
+        gap: 40px;
+    }
+
+    .Orta {
+        max-width: 100%;
+    }
+
+    .Orta h1 {
+        font-size: clamp(37px, 9vw, 52px);
+        letter-spacing: -1.5px;
+    }
+
+    .Orta p {
+        font-size: 15px;
+    }
+
+    .Orta p br {
+        display: none;
+    }
+
+    .bottom {
+        gap: 18px;
+    }
+
+    .rasm {
+        min-height: 320px;
+        max-width: 100%;
+    }
+
+    .mahsulotlar img {
+        max-width: 100%;
+    }
+
+    .winback {
+        top: 15px;
+        left: 0;
+        padding: 12px 15px;
+    }
+
+    .avatar-rasm {
+        width: 40px;
+        height: 40px;
+    }
+
+    .winback-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .buttonlar {
+        gap: 10px;
+    }
+
+    .login {
+        font-size: 10px ;
+    }
+
+    .account {
+        padding: 10px ;
+        font-size: 11px ;
+    }
+
+    .Orta h1 {
+        font-size: 35px;
+    }
+
+    .cta {
+        padding: 15px 17px;
+    }
+
+    .rasm {
+        min-height: 260px;
+    }
+}
+
+/* UMUMIY BO'LIMLAR */
+section {
+    scroll-margin-top: 30px;
+}
+
+.bolim-sarlavha {
+    text-align: center;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    color: #303037;
+    margin-bottom: 45px;
+}
+
+.qolyozuv {
+    color: #009b8d;
+    font-family: "Comic Sans MS", cursive;
+    font-style: italic;
+}
+
+.brendlar {
+    background: #fff;
+    padding: 70px 6%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.brendlar-royxati {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.brend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: transform .3s;
+    border-radius: 50px;
+}
+
+.brend:hover {
+    transform: translateY(-7px);
+}
+
+.brend img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 50px;
+
+}
+
+.brend h3 {
+    font-size: 21px;
+    color: #25252b;
+}
+
+/* 2. NEGA DIRECT MAIL */
+.sabablar {
+    background: #f2faf9;
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.sabablar-ichki {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    align-items: center;
+    gap: 35px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.korsatkich h3 {
+    font-size: clamp(30px, 4vw, 42px);
+    margin-bottom: 10px;
+}
+
+.korsatkich p {
+    color: #5b6562;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.foizlar {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    min-height: 125px;
+}
+
+.foiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #303037;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 #303037;
+}
+
+.foiz.katta {
+    background: #ff692e;
+    width: 65px;
+    height: 105px;
+    color: white;
+}
+
+.foiz.kichik {
+    background: #dff8f1;
+    width: 60px;
+    height: 40px;
+    font-size: 13px;
+}
+
+.foiz small {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/* 3. XIZMATLAR */
+.xizmatlar {
+    padding: 75px 6%;
+    background: #fff3e8;
+}
+
+.xizmatlar > h2 {
+    text-align: center;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 70px;
+    color: #303037;
+}
+
+.xizmatlar-ichki {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 65px 8%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.xizmat {
+    padding: 10px;
+    transition: transform .3s;
+}
+
+.xizmat:hover {
+    transform: translateY(-5px);
+}
+
+.xizmat h3 {
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.15;
+    margin-bottom: 18px;
+    color: #303037;
+}
+
+.xizmat p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #55575c;
+}
+
+.fikr {
+    margin-top: 22px;
+    border: 1px solid #d9cfc5;
+    border-radius: 10px;
+    padding: 22px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #515158;
+}
+
+.fikr::before {
+    content: "“";
+    display: block;
+    color: #ff692e;
+    font-size: 35px;
+    line-height: .8;
+}
+
+.fikr small {
+    display: block;
+    margin-top: 12px;
+    color: #9b938d;
+}
+
+/* 4. IMKONIYATLAR */
+.imkoniyatlar {
+    background: #fff;
+    padding: 75px 5%;
+}
+
+.imkoniyatlar-royxati {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imkoniyat {
+    padding: 25px 20px;
+    border-radius: 9px;
+    text-align: center;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.imkoniyat:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px #183d3218;
+}
+
+.imkoniyat:nth-child(1) {
+    background: #fff2e7;
+}
+
+.imkoniyat:nth-child(2) {
+    background: #dff8f1;
+}
+
+.imkoniyat:nth-child(3) {
+    background: #eeebff;
+}
+
+.imkoniyat:nth-child(4) {
+    background: #d9f3f7;
+}
+
+.imkoniyat:nth-child(5) {
+    background: #fbecee;
+}
+
+.imkoniyat:nth-child(6) {
+    background: #f1f1f1;
+}
+
+.imkoniyat-rasm {
+    height: 120px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imkoniyat-rasm img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.imkoniyat-rasm i {
+    font-size: 55px;
+    color: #159f8c;
+}
+
+.imkoniyat h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #303037;
+}
+
+.imkoniyat p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #55575c;
+}
+
+/* 5. ISH JARAYONI */
+.jarayon {
+    padding: 70px 7%;
+    background: #e1f8f7;
+}
+
+.jarayon-ichki {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.jarayon-qadam {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background .3s, transform .3s;
+}
+
+.jarayon-qadam:hover {
+    background: #ffffffb8;
+    transform: translateX(5px);
+}
+
+.jarayon-raqam {
+    color: #009b8d;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.jarayon-qadam h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.jarayon-qadam p {
+    color: #56625f;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* 6. MIJOZLAR FIKRI */
+.mijozlar {
+    padding: 75px 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.mijozlar-royxati {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 5%;
+}
+
+.mijoz-fikri {
+    border: 1px solid #303037;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.mijoz-fikri:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 5px 0 #303037;
+}
+
+.mijoz-boshi {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.mijoz-boshi img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mijoz-boshi h4 {
+    font-size: 14px;
+}
+
+.mijoz-boshi span {
+    font-size: 12px;
+    color: #777;
+}
+
+.mijoz-fikri p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #55575c;
+}
+
+/* 7. BREND NATIJALARI */
+.natija-bolimi {
+    background: #eeebff;
+    padding: 70px 7%;
+}
+
+.natija-ichki {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.natija-rasmi img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    transition: transform .3s;
+}
+
+.natija-rasmi img:hover {
+    transform: scale(1.03);
+}
+
+.natija-matn h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.natija-matn p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #55575c;
+}
+
+.statistika {
+    display: flex;
+    gap: 30px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.statistika strong {
+    display: block;
+    font-size: 22px;
+}
+
+.statistika span {
+    font-size: 12px;
+    color: #55575c;
+}
+
+.oddiy-tugma {
+    display: inline-block;
+    background: white;
+    color: #303037;
+    border: 1px solid #303037;
+    border-radius: 9px;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 #303037;
+    transition: .3s;
+}
+
+.oddiy-tugma:hover {
+    background: #303037;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* 8. TO'Q SARIQ CTA */
+.taklif {
+    background: #ff692e;
+    color: #fff;
+    padding: 65px 7%;
+    overflow: hidden;
+}
+
+.taklif-ichki {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.taklif h2 {
+    font-size: clamp(35px, 5vw, 55px);
+    line-height: 1.08;
+    margin-bottom: 18px;
+}
+
+.taklif p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.taklif-rasm img {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    transition: transform .3s;
+}
+
+.taklif-rasm img:hover {
+    transform: rotate(-3deg) scale(1.03);
+}
+
+.taklif .oddiy-tugma:hover {
+    background: #183d32;
+}
+
+/* 9. BLOG */
+.blog {
+    padding: 70px 5%;
+    background: #f2faf9;
+}
+
+.blog-royxati {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-karta {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.blog-karta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px #163c321c;
+}
+
+.blog-karta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-karta h3 {
+    padding: 15px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* 10. FOOTER */
+footer {
+    padding: 55px 6% 25px;
+    background: #fff;
+}
+
+.pastki-ichki {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 45px;
+    padding-bottom: 35px;
+}
+
+.eko-belgi img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.eko-belgi p {
+    max-width: 250px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #666;
+    margin-top: 15px;
+}
+
+.pastki-ustun h4 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.pastki-ustun a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: #4e5552;
+    font-size: 13px;
+    margin-bottom: 15px;
+    transition: color .3s;
+}
+
+.pastki-ustun a:hover {
+    color: #009b8d;
+}
+
+.pastki-chiziq {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pastki-logo {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.pastki-logo i {
+    color: #009b8d;
+}
+
+.pastki-chiziq p {
+    font-size: 11px;
+    color: #666;
+    margin-top: 7px;
+}
+
+.pastki-tugmalar {
+    display: flex;
+    gap: 12px;
+}
+
+.pastki-tugmalar a {
+    padding: 10px 17px;
+    border: 1px solid #303037;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #303037;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.pastki-tugmalar a:last-child {
+    background: #ff692e;
+    color: white;
+}
+
+.pastki-tugmalar a:hover {
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .brendlar-royxati {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sabablar-ichki {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .imkoniyatlar-royxati {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .natija-ichki,
+    .taklif-ichki {
+        grid-template-columns: 1fr;
+    }
+
+    .natija-rasmi {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .taklif-rasm {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .blog-royxati {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pastki-ichki {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .bolim-sarlavha {
+        margin-bottom: 30px;
+    }
+
+    .brendlar,
+    .sabablar,
+    .xizmatlar,
+    .imkoniyatlar,
+    .jarayon,
+    .natija-bolimi,
+    .taklif,
+    .blog {
+        padding: 45px 5%;
+    }
+
+    .brendlar-royxati,
+    .imkoniyatlar-royxati,
+    .blog-royxati,
+    .xizmatlar-ichki,
+    .pastki-ichki {
+        grid-template-columns: 1fr;
+    }
+
+    .brend img {
+        height: 100px;
+    }
+
+    .xizmatlar > h2 {
+        margin-bottom: 35px;
+    }
+
+    .xizmatlar-ichki {
+        gap: 30px;
+    }
+
+    .mijozlar-royxati {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+
+    .natija-bolimi {
+        padding: 45px 6%;
+    }
+
+    .statistika {
+        gap: 20px;
+    }
+
+    .taklif h2 {
+        font-size: 38px;
+    }
+
+    .pastki-ichki {
+        gap: 30px;
+    }
+
+    .pastki-chiziq {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
